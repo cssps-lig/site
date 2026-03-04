@@ -1,0 +1,14 @@
+<footer>
+    <div class="footer-content">
+        <img src="https://i.postimg.cc/jSYMk6dz/logo-cssps.png" alt="CSSPS" class="footer-logo">
+        <p class="footer-text">© 2026 - Ligue Interservices de Garde<br>
+        Centre de Service Scolaire des Premières-Seigneuries</p>
+    </div>
+    <button class="btn-top" id="btnTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+    document.getElementById('btnTop').classList.toggle('visible', window.scrollY > 300);
+});
+</script>
