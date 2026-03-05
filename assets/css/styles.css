@@ -1742,11 +1742,13 @@ footer {
         font-size: 0.62rem;
     }
 
-    .nav-gestionnaire-mobile {
-        display: flex;
-        flex: 0 0 auto;
-        margin-left: 0;
-    }
+.nav-gestionnaire-mobile {
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--gris-fonce);
+}
 
 .nav-link {
     padding: 0.5rem 0.4rem;
