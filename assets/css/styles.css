@@ -87,10 +87,10 @@ header {
 }
 
 .devise-img {
+    display: block;
+    margin-left: auto;
     max-height: 80px;
-    height: auto;
-    align-self: flex-end;
-    margin-top: 1.5rem;
+    width: auto;
 }
 
 /* ==========================================
