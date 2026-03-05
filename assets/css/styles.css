@@ -457,7 +457,7 @@ main {
     font-size: 1rem;
     color: var(--gris-texte);
     line-height: 1.7;
-    max-width: 768px;
+    max-width: ;
     margin: 0 auto;
 }
 
@@ -1705,7 +1705,7 @@ footer {
     }
 
 .devise-img {
-    max-width: 75%;
+    width: 75%;
     height: auto;
 }
 
