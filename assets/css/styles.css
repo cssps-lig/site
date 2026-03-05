@@ -1705,8 +1705,9 @@ footer {
     }
 
 .devise-img {
-    width: 40%;
+    width: 50%;
     height: auto;
+    max-height: none;
 }
 
     .header-content h1 {
