@@ -88,6 +88,7 @@ header {
 
 .devise-img {
     max-width: 100%;
+    max-height: 80px;
     height: auto;
     align-self: flex-end;
     margin-top: 1.5rem;
