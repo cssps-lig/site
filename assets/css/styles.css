@@ -86,23 +86,11 @@ header {
     margin-bottom: -35px;
 }
 
-.devise {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.7rem;
-    font-style: italic;
-    color: var(--noir);
-    margin: 0;
-    text-align: right;
-    letter-spacing: 0.3px;
-    line-height: 2;
+.devise-img {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
     margin-top: 1.5rem;
-}
-
-.devise-highlight {
-    color: var(--rouge-lig);
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 /* ==========================================
