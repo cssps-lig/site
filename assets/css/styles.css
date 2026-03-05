@@ -1748,10 +1748,12 @@ footer {
         margin-left: 0;
     }
 
-    .nav-link {
-        padding: 0.5rem 0.4rem;
-        font-size: 0.75rem;
-    }
+.nav-link {
+    padding: 0.5rem 0.4rem;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+}
 
     .nav-accueil-texte {
         display: none;
