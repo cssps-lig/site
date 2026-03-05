@@ -89,9 +89,9 @@ header {
 .devise-img {
     display: block;
     margin-left: auto;
-    vertical-align: middle;
     max-height: 80px;
     width: auto;
+    align-self: center;
 }
 
 /* ==========================================
