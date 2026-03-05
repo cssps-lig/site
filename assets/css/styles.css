@@ -1708,6 +1708,7 @@ footer {
     width: 50%;
     height: auto;
     max-height: none;
+    margin-left: 0;
 }
 
     .header-content h1 {
