@@ -1698,8 +1698,13 @@ footer {
 }
 .header-layout {
     display: block;
-    overflow: hidden;
     min-height: 70px;
+}
+
+.header-layout::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 .logo-lig {
     float: left;
