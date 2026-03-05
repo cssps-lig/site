@@ -1705,10 +1705,12 @@ footer {
     }
 
 .devise-img {
-    width: 66%;
+    flex: 1;
+    min-width: 0;
+    max-height: 50px;
     height: auto;
-    max-height: none;
-    margin-left: 0;
+    width: 100%;
+    margin-left: 1rem;
 }
 
     .header-content h1 {
