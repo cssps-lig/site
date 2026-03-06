@@ -2195,7 +2195,7 @@ footer {
    .lalig-mots-cles .separateur-mot {
        color: var(--rouge-lig);
        font-weight: 900;
-       font-size: 0.75rem;
+       font-size: 0.85rem;
     }
 #navAccueil svg {
     width: 20px;
