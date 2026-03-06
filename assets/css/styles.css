@@ -2178,8 +2178,10 @@ footer {
     .stat-item {
         --offset: 0rem !important;
     }
-   #navAccueil svg {
-    width: 18px;
-    height: 18px;
+
+#navAccueil svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
 }
 }
