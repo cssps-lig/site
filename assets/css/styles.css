@@ -2185,6 +2185,10 @@ footer {
     .stat-item {
         --offset: 0rem !important;
     }
+   
+   .lalig-mots-cles {
+       gap: 0.25rem;
+    }
    .lalig-mots-cles span {
        font-size: 0.75rem;
     }
