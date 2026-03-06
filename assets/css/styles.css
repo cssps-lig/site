@@ -2110,8 +2110,10 @@ footer {
 .lalig-mots-cles {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -2132,8 +2134,9 @@ footer {
 
 .lalig-objectifs {
     border-top: 2px solid var(--gris-moyen);
-    padding-top: 1.5rem;
+    padding-top: 0.8rem;
     padding-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 .lalig-objectifs-titre {
