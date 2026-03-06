@@ -148,26 +148,30 @@ header {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
-    padding: 1rem 1.5rem;
-    color: var(--noir);
+    padding: 0.6rem 1.25rem;
+    color: var(--noir-light);
+    background: var(--blanc);
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
-    border-bottom: 3px solid transparent;
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
     color: var(--bleu-qc);
-    background: rgba(0, 61, 165, 0.05);
+    background: var(--bleu-qc-light);
+    border-color: var(--bleu-qc);
 }
 
 .nav-link.active {
-    color: var(--bleu-qc);
-    border-bottom-color: var(--bleu-qc);
-    background: rgba(0, 61, 165, 0.05);
+    color: var(--blanc);
+    background: var(--bleu-qc);
+    border-color: var(--bleu-qc);
 }
 
 .nav-link.disabled {
@@ -1752,7 +1756,7 @@ footer {
 }
 
 .nav-link {
-    padding: 0.5rem 0.4rem;
+    padding: 0.4rem 0.6rem;
     font-size: 0.75rem;
     display: flex;
     align-items: center;
