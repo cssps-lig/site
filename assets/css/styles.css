@@ -1995,9 +1995,7 @@ footer {
     .mode-btn {
         width: 100%;
     }
-   .lalig-mots-cles span {
-    font-size: 0.75rem;
-}
+
 }
 
 /* ==========================================
@@ -2187,7 +2185,9 @@ footer {
     .stat-item {
         --offset: 0rem !important;
     }
-
+   .lalig-mots-cles span {
+       font-size: 0.75rem;
+    }
 #navAccueil svg {
     width: 20px;
     height: 20px;
