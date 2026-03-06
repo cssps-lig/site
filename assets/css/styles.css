@@ -2177,4 +2177,8 @@ footer {
     .stat-item {
         --offset: 0rem !important;
     }
+   #navAccueil svg {
+    width: 22px;
+    height: 22px;
+}
 }
