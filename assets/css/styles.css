@@ -1995,6 +1995,9 @@ footer {
     .mode-btn {
         width: 100%;
     }
+   .lalig-mots-cles span {
+    font-size: 0.85rem;
+}
 }
 
 /* ==========================================
@@ -2120,7 +2123,7 @@ footer {
 .lalig-mots-cles span {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--bleu-qc);
     text-transform: uppercase;
     letter-spacing: 0.5px;
