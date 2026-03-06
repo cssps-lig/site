@@ -1744,7 +1744,8 @@ footer {
 
 .nav-gestionnaire-mobile {
     display: flex;
-    flex: 0 0 auto;
+    flex: 1;
+    justify-content: center;
     margin-left: 0.75rem;
     padding-left: 0.75rem;
     border-left: 1px solid var(--gris-fonce);
