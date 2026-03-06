@@ -18,7 +18,7 @@
 {{ content }}
 </main>
 
-{% include footer.html %}
+{% unless page.no_footer %}{% include footer.html %}{% endunless %}
 
 </body>
 </html>
