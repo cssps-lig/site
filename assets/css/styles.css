@@ -579,7 +579,7 @@ footer {
     background: var(--gris-clair);
     border-top: 2px solid var(--gris-moyen);
     margin-top: 1rem;
-    padding: 2rem;
+    padding: 1.2rem;
 }
 
 .footer-content {
@@ -588,7 +588,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.2rem;
 }
 
 .footer-logo {
