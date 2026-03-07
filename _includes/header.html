@@ -17,10 +17,40 @@
                 <span class="nav-accueil-texte">Accueil</span>
             </a>
             <a href="{{ site.baseurl }}/lalig.html" class="nav-link{% if page.url contains 'lalig' %} active{% endif %}" id="navLaLIG">La LIG, qu'est-ce que c'est ?</a>
+            <!-- Dropdown Disciplines (desktop seulement) -->
+            <div class="nav-disciplines" id="navDisciplines">
+                <button class="nav-link nav-disciplines-btn" id="navDisciplinesBtn" aria-haspopup="true" aria-expanded="false">
+                    Disciplines <span class="disciplines-arrow">▾</span>
+                </button>
+                <div class="disciplines-dropdown" id="disciplinesDropdown">
+                    <a href="{{ site.baseurl }}/soccer/" class="disciplines-item{% if page.url contains 'soccer' %} active{% endif %}">Soccer intérieur</a>
+                    <span class="disciplines-item disabled">Hockey</span>
+                    <span class="disciplines-item disabled">Improvisation</span>
+                    <span class="disciplines-item disabled">Danse</span>
+                    <span class="disciplines-item disabled">Génie en Herbe</span>
+                </div>
+            </div>
             <!-- Bouton gestionnaire mobile -->
             <div class="nav-gestionnaire-mobile" id="navGestionnaireMobile">
                 <a href="{{ site.baseurl }}/soccer/" class="nav-link nav-gestion-btn" id="navGestionBtn">🔐 GESTION</a>
             </div>
         </div>
     </nav>
+    <script>
+    (function() {
+        var btn = document.getElementById('navDisciplinesBtn');
+        var dropdown = document.getElementById('disciplinesDropdown');
+        if (!btn) return;
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var isOpen = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isOpen);
+            dropdown.classList.toggle('open', !isOpen);
+        });
+        document.addEventListener('click', function() {
+            btn.setAttribute('aria-expanded', 'false');
+            dropdown.classList.remove('open');
+        });
+    })();
+    </script>
 </header>
