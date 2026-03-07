@@ -2133,6 +2133,12 @@ footer {
     font-size: 1.2rem;
 }
 
+.lalig-stats-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
 .lalig-objectifs {
     border-top: 2px solid var(--gris-moyen);
     padding-top: 0.8rem;
