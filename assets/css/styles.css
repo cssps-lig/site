@@ -182,8 +182,91 @@ header {
     cursor: not-allowed;
     pointer-events: none;
 }
+
 #navAccueil {
     padding: 0.4rem 0.4rem;
+}
+
+/* Dropdown Disciplines */
+.nav-disciplines {
+    position: relative;
+}
+
+.nav-disciplines-btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+.disciplines-arrow {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-disciplines-btn[aria-expanded="true"] .disciplines-arrow {
+    transform: rotate(180deg);
+}
+
+.disciplines-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: 0;
+    background: var(--blanc);
+    border: 1px solid var(--gris-moyen);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    min-width: 180px;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.disciplines-dropdown.open {
+    display: block;
+}
+
+.disciplines-item {
+    display: block;
+    padding: 0.7rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--noir-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gris-moyen);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.disciplines-item:last-child {
+    border-bottom: none;
+}
+
+.disciplines-item:hover:not(.disabled) {
+    background: var(--bleu-qc-light);
+    color: var(--bleu-qc);
+}
+
+.disciplines-item.active {
+    color: var(--bleu-qc);
+    font-weight: 700;
+}
+
+.disciplines-item.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .nav-disciplines {
+        display: none;
+    }
 }
 
 /* Login à droite */
