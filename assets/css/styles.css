@@ -193,12 +193,8 @@ header {
 }
 
 .nav-disciplines-btn {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
     gap: 0.35rem;
-    background: transparent;
-    border: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
 }
 
 .disciplines-arrow {
