@@ -19,9 +19,9 @@
             <a href="{{ site.baseurl }}/lalig.html" class="nav-link{% if page.url contains 'lalig' %} active{% endif %}" id="navLaLIG">La LIG, qu'est-ce que c'est ?</a>
             <!-- Dropdown Disciplines (desktop seulement) -->
             <div class="nav-disciplines" id="navDisciplines">
-                <button class="nav-link nav-disciplines-btn" id="navDisciplinesBtn" aria-haspopup="true" aria-expanded="false">
+                <div class="nav-link nav-disciplines-btn" id="navDisciplinesBtn" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">
                     Disciplines <span class="disciplines-arrow">▾</span>
-                </button>
+                </div>
                 <div class="disciplines-dropdown" id="disciplinesDropdown">
                     <a href="{{ site.baseurl }}/soccer/" class="disciplines-item{% if page.url contains 'soccer' %} active{% endif %}">Soccer intérieur</a>
                     <span class="disciplines-item disabled">Hockey</span>
