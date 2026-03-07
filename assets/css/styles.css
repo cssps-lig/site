@@ -136,7 +136,7 @@ header {
     z-index: 103;
 }
 
-.nav- {
+.nav-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -2016,9 +2016,9 @@ footer {
    PAGE LA LIG
    ========================================== */
 .lalig-container {
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 1.25rem 2rem 0 2rem;
+    padding: 1.25rem 0 0 0;
 }
 
 .lalig-hero {
