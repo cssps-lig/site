@@ -39,10 +39,12 @@
                 <a href="{{ site.baseurl }}/" class="nav-mobile-home">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                 </a>
-                <span class="nav-mobile-titre">
-                    {% if page.url == '/' or page.url == '/index.html' %}Accueil{% elsif page.url contains 'lalig' %}La LIG{% elsif page.url contains 'soccer' %}Soccer{% else %}Menu{% endif %} &#9654;
-                </span>
-                <button class="nav-mobile-hamburger" id="navMobileHamburger" aria-label="Menu">&#9776;</button>
+                <div class="nav-mobile-right">
+                    <span class="nav-mobile-titre">
+                        {% if page.url == '/' or page.url == '/index.html' %}Accueil{% elsif page.url contains 'lalig' %}La LIG{% elsif page.url contains 'soccer' %}Soccer{% else %}Menu{% endif %}
+                    </span>
+                    <button class="nav-mobile-hamburger" id="navMobileHamburger" aria-label="Menu">&#9776;</button>
+                </div>
             </div>
         </div>
     </nav>
