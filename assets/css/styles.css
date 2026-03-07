@@ -322,6 +322,172 @@ header {
 }
 
 /* ==========================================
+   DRAWER MOBILE
+   ========================================== */
+.nav-mobile-bar {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-mobile-home {
+    color: var(--noir-light);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.nav-mobile-home:hover {
+    color: var(--bleu-qc);
+}
+
+.nav-mobile-titre {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--noir-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-mobile-hamburger {
+    background: var(--bleu-qc);
+    color: var(--blanc);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0.7rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.drawer-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 300;
+}
+
+.drawer-overlay.open {
+    display: block;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: var(--blanc);
+    z-index: 301;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gris-moyen);
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--gris-texte);
+    padding: 0.25rem 0.5rem;
+}
+
+.drawer-close:hover {
+    color: var(--noir);
+}
+
+.drawer-nav {
+    padding: 0.5rem 0;
+}
+
+.drawer-item {
+    display: block;
+    padding: 0.85rem 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--noir-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--gris-moyen);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.drawer-item:hover:not(.disabled) {
+    background: var(--bleu-qc-light);
+    color: var(--bleu-qc);
+}
+
+.drawer-item.active {
+    color: var(--bleu-qc);
+    background: var(--bleu-qc-light);
+}
+
+.drawer-item.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.drawer-section {
+    display: block;
+    padding: 0.6rem 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--gris-texte);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--gris-clair);
+    border-bottom: 1px solid var(--gris-moyen);
+    cursor: default;
+}
+
+.drawer-sub {
+    padding-left: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.drawer-separator {
+    height: 1px;
+    background: var(--gris-moyen);
+    margin: 0.25rem 0;
+}
+
+.drawer-gestion {
+    color: var(--bleu-qc);
+}
+
+/* ==========================================
    NAVIGATION SPORT (ligne unique)
    ========================================== */
 .sport-nav {
