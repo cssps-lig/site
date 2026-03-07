@@ -339,7 +339,6 @@ header {
 }
 
 .nav-mobile-titre {
-    flex: 1;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 0.85rem;
@@ -351,8 +350,24 @@ header {
     text-overflow: ellipsis;
 }
 
+.nav-mobile-titre::after {
+    content: ' ▶';
+    font-size: 0.55rem;
+    margin-left: 0.3rem;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+
+.nav-mobile-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 0.25rem;
+}
+
 .nav-mobile-hamburger {
-    background: var(--bleu-qc);
+    background: var(--noir);
     color: var(--blanc);
     border: none;
     border-radius: var(--radius-sm);
@@ -456,7 +471,7 @@ header {
     padding: 0.6rem 1.25rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: var(--gris-texte);
     text-transform: uppercase;
     letter-spacing: 1px;
